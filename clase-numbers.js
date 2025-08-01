@@ -13,3 +13,11 @@ let noEsUnNumero = NaN
 console.log(infinito, typeof infinito)
 console.log(noEsUnNumero, typeof noEsUnNumero)
 
+// Solucionando errores de precisión
+let resultado = 0.1 + 0.2
+console.log(resultado)
+console.log(resultado.toFixed(1)) // Solucion,, que nos devuelva un solo decimal.
+
+// probando
+console.log((0.1 + 0.2) === 0.3) // false
+console.log(resultado.toFixed(1) === 0.3.toFixed(1)) // Solucion: true
